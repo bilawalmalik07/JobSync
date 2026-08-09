@@ -29,9 +29,9 @@ app.add_middleware(
 )
 
 
-@app.get("/api/health")
+@app.api_route("/api/health", methods=["GET", "HEAD"])
 async def health():
-    return {"status": "ok"}
+    return {"status": "healthy", "project": "JobSync AI"}
 
 
 @app.post("/analyze", response_model=BatchJobResponse)
