@@ -1,0 +1,13 @@
+python-dotenv
+asyncpg
+sqlalchemy
+pydantic
+google-genai
+uvicorn
+greenlet
+fastapi
+python-multipart
+pdfplumber
+python-docx
+pytesseract
+Pillow
