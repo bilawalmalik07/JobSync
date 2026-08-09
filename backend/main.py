@@ -1,10 +1,12 @@
 import json
 import os
 import uuid
+from pathlib import Path
 
 from dotenv import load_dotenv
 from fastapi import Depends, FastAPI, File, Form, HTTPException, UploadFile
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.staticfiles import StaticFiles
 
 from resume_parser import extract_text_from_file
 from schemas import BatchJobInput, BatchJobResponse, JobDescriptionInput
@@ -27,8 +29,8 @@ app.add_middleware(
 )
 
 
-@app.get("/")
-async def root():
+@app.get("/api/health")
+async def health():
     return {"status": "ok"}
 
 
@@ -55,3 +57,8 @@ async def analyze(
         result=results,
         total_jobs=len(results),
     )
+
+frontend_dist = Path(__file__).parent / "static"
+if frontend_dist.exists():
+    app.mount("/", StaticFiles(directory=frontend_dist,
+              html=True), name="frontend")
