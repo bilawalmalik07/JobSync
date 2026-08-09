@@ -4,8 +4,7 @@
 
 JobSync AI is a fast, AI-powered web dashboard that lets job seekers test one resume against dozens of job descriptions at once — instead of copy-pasting them one by one.
 
-🔗 Live: _not deployed yet_
-🎥 Demo: _coming soon_
+🔗 Live: (https://jobsync-xeln.onrender.com/)
 
 ## Overview
 
@@ -32,14 +31,14 @@ Built for speed. Structured, cached, and accurate.
 
 ## Tech Stack
 
-| Layer      | Tools                                                        |
-| ---------- | ------------------------------------------------------------- |
-| Frontend   | React, Vite, custom CSS                                       |
-| Backend    | FastAPI, PostgreSQL (Neon), SQLAlchemy (async)                 |
-| AI         | Google Gemini 2.5 Flash (structured output)                    |
-| Resume OCR | pytesseract, Pillow, pdfplumber, python-docx                   |
-| Auth       | Custom API key middleware                                      |
-| Hosting    | _not deployed yet_                                             |
+| Layer      | Tools                                          |
+| ---------- | ---------------------------------------------- |
+| Frontend   | React, Vite, custom CSS                        |
+| Backend    | FastAPI, PostgreSQL (Neon), SQLAlchemy (async) |
+| AI         | Google Gemini 2.5 Flash (structured output)    |
+| Resume OCR | pytesseract, Pillow, pdfplumber, python-docx   |
+| Auth       | Custom API key middleware                      |
+| Hosting    | _not deployed yet_                             |
 
 ## Project Background
 
