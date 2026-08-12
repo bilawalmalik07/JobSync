@@ -38,7 +38,7 @@ Built for speed. Structured, cached, and accurate.
 | AI         | Google Gemini 2.5 Flash (structured output)    |
 | Resume OCR | pytesseract, Pillow, pdfplumber, python-docx   |
 | Auth       | Custom API key middleware                      |
-| Hosting    | _not deployed yet_                             |
+| Hosting    | Render                           |
 
 ## Project Background
 
